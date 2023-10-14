@@ -38,8 +38,8 @@ Você foi o desenvolvedor selecionado para implementar o MVP levando em conta o 
 
 ### **Tabela users**
 
-- Nome da tabela: **_users_**.
-- Colunas:
+- Nome da tabela: \* - Todos os campos obrigatórios devem estar no body da requisição.
+
   - **id**: número, incrementação automática e chave primária.
   - **name**: string, tamanho 50 e obrigatório.
   - **email**: string, tamanho 50, obrigatório e único.
@@ -131,6 +131,7 @@ Você foi o desenvolvedor selecionado para implementar o MVP levando em conta o 
   ```json
   // Cadastrando com admin igual a true
   {
+      "id": 1,
       "name": "Ugo",
       "email": "ugo@kenzie.com.br",
       "password": "1234",
@@ -145,9 +146,17 @@ Você foi o desenvolvedor selecionado para implementar o MVP levando em conta o 
   }
   ```
 
-  | Resposta do servidor:      |
+  Tou indo
+  10:46
+  HOJE
+  ￼
+  A conta CHEGOU: Como DEVS Iniciantes vão PAGAR?? (Conselho de amigo, literalmente)
+  ￼ Crie seu site na Hostinger: https://hostinger.com.br/diolinuxUse o cupom "DIOLINUX" para 10% de desconto.￼ Crie um site grátis na 000Webhost: https://br.00...
+  youtube.com
+  https://www.youtube.com/watch?v=DmtoZtuSo5I
+  | Resposta do servidor: |
   | -------------------------- |
-  | Body: Formato Json         |
+  | Body: Formato Json |
   | Status code: _201 CREATED_ |
 
   ```json
@@ -224,7 +233,7 @@ Você foi o desenvolvedor selecionado para implementar o MVP levando em conta o 
 
 - **Sucesso**:
   - Retorno esperado: um objeto contendo o token jwt.
-  - Status esperado: _20 OK_
+  - Status esperado: _200 OK_
 - **Falha**:
 
   - Caso o email não exista ou a senha esteja incorreta:
@@ -273,7 +282,7 @@ Você foi o desenvolvedor selecionado para implementar o MVP levando em conta o 
   | Status code: _401 UNAUTHORIZED_ |
 
   ```json
-  {
+  {kenzie
     "message": "Wrong email/password"
   }
   ```
@@ -424,7 +433,7 @@ Você foi o desenvolvedor selecionado para implementar o MVP levando em conta o 
 
   - Caso o usuário não esteja matriculado em nenhum curso:
 
-    - Retorno esperado: um objeto contendo a chave **_message_** com a mensagem de erro retornada pelo lib do jwt;
+    - Retorno esperado: um objeto contendo a cha ve **_message_** com a mensagem de erro retornada pelo lib do jwt;
     - Status esperado: _404 NOT FOUND_.
 
   - Caso o token seja de um usuário cujo **admin** é false:
@@ -996,3 +1005,5 @@ Você foi o desenvolvedor selecionado para implementar o MVP levando em conta o 
     "message": "Insufficient permission"
   }
   ```
+
+## **Rota - /courses**
